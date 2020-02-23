@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "851e4ccd-f295-4fe3-9162-15e9cffadbfd",
+		"name": "NodeJWTAuth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin1",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTUyMmYzZDMwZjY0NjQ4YTRmZDM5MzAiLCJpYXQiOjE1ODI0NjY0MjIsImV4cCI6MTU4MjU1MjgyMn0.2PfP5RsRguKrHylGQu2s2bUWxOpdyxSRHcyZbrdLYMA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTUyMzAxZDMwZjY0NjQ4YTRmZDM5MzEiLCJpYXQiOjE1ODI0NDQ1NzMsImV4cCI6MTU4MjUzMDk3M30.pjJ6qW-vvwUezIYRHsYJaW7GVtcGRJ9-cZiFdB2mIM4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/user/5e522f3d30f64648a4fd3930",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"5e522f3d30f64648a4fd3930"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/5e5282bb3844ed3dc0ddd862",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTUyODJiZDM4NDRlZDNkYzBkZGQ4NjMiLCJpYXQiOjE1ODI0NjU3MjUsImV4cCI6MTU4MjU1MjEyNX0.3VNr3814RpdtQMv5JgU6tS_4WLPWEtSs3mW3SMbijJM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/user/5e5282bb3844ed3dc0ddd862",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"5e5282bb3844ed3dc0ddd862"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
